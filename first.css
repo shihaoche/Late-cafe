@@ -1,0 +1,294 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,
+h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,
+strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,
+ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+embed,figure,figcaption,footer,header,hgroup,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,
+header,hgroup,menu,nav,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* 導覽設定 */
+#office__header {
+	height: 100px;
+	background: -webkit-radial-gradient(circle, white, rgb(126, 126, 126));
+	background: -o-radial-gradient(circle, white, rgb(126, 126, 126));
+	background: -moz-radial-gradient(circle, white, rgb(126, 126, 126));
+	background: radial-gradient(circle, white, rgb(126, 126, 126));
+}
+
+.office__header {
+	display: flex;
+	justify-content: space-between;
+	box-shadow:
+		10px 5px 25px 0px rgb(218, 218, 218);
+	position: sticky;
+	top: 0px;
+
+}
+
+.office__header--img {
+	margin: 10px 0 15px 20px;
+	padding: 10px;
+}
+
+.office__header--time {
+	margin: 40px 30px 15px 0;
+	font-size: 30px;
+}
+
+.office__header--img img {
+	width: 280px;
+	height: 70px;
+}
+
+/* 店門與窗框線 */
+.office__nav--lineon {
+	display: flex;
+}
+
+.office__nav--lineon1 {
+	width: 10%;
+	height: 180px;
+	border-bottom: solid 5px rgb(0, 0, 0);
+}
+
+.office__nav--lineon2 {
+	align-self: flex-end;
+	width: 10%;
+	height: 80px;
+	border-left: solid 4px rgb(94, 94, 94);
+	border-right: solid 4px rgb(94, 94, 94);
+	border-top: solid 4px rgb(94, 94, 94);
+	border-top-left-radius: 100%;
+}
+
+.office__nav--lineon3 {
+	align-self: flex-end;
+	width: 15%;
+	height: 80px;
+	border-right: solid 2px rgb(0, 0, 0);
+	border-bottom: solid 5px rgb(0, 0, 0);
+}
+
+.office__nav--lineon4 {
+	width: 75%;
+	height: 100px;
+	border-bottom: solid 3px rgb(0, 0, 0);
+}
+
+/* 窗邊座位 */
+.office__nav--widows {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: -25px;
+	margin-right: 25px;
+}
+
+.office__nav--button {
+	width: 25px;
+	height: 25px;
+	background-color: rgba(46, 88, 255, 0.81);
+	border-radius: 25%;
+	align-self: center;
+	padding: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.office__nav--table {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	background-color: rgb(255, 153, 0);
+	border: solid 2px black;
+	border-radius: 25%;
+}
+
+/* 內部座位 */
+.office__nav--intablein {
+	display: flex;
+	justify-content: center;
+}
+
+.office__nav--button-in {
+	width: 25px;
+	height: 25px;
+	background-color: rgba(46, 88, 255, 0.81);
+	border-radius: 25%;
+	padding: 15px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.office__nav--tablein {
+	width: 75px;
+	height: 75px;
+	background-color: rgb(255, 153, 0);
+	border: solid 2px black;
+	border-radius: 25%;
+}
+
+.office__nav--in {
+	display: flex;
+	margin-top: 50px;
+	margin-right: 100px;
+}
+
+/* 吧檯 */
+.office__nav--tablebarnav {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.office__nav--tablebar {
+	margin-top: -333px;
+}
+
+.office__nav--barbutton {
+	margin-top: -320px;
+}
+
+.office__nav--button-tablebar {
+	width: 25px;
+	height: 25px;
+	background-color: rgba(46, 88, 255, 0.81);
+	border-radius: 25%;
+	padding: 20px;
+	margin-top: 40px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* 點餐視窗 */
+/* 滑窗設定 */
+.header__mobileMenu {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(255, 255, 255);
+	top: 0;
+	left: -100vw;
+	transition: 0.5s;
+	z-index: 3;
+	margin-top: 100px;
+
+}
+
+/* 滑窗大小設定 */
+.header__mobileMenu.open {
+	left: 0;
+	width: 25%;
+	margin-top: 100px;
+}
+
+/* 滑窗置中 */
+.mobileMenu {
+	height: calc(100vh - 45px);
+	overflow-y: scroll;
+	padding: 20px;
+	text-align: center;
+}
+
+.searchBar__cancel {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* 視窗取消打叉鍵設定 */
+.searchBar__cancel::after {
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.searchBar__cancel::after {
+	content: "\58";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 25px;
+	background: #2e2e2e;
+	color: #fff;
+}
+
+
+/* 下拉選單設定 */
+#menu,#shop,#math {
+	font-size: 20px;
+	margin: 10px;
+	text-align: center;
+}
+
+
+/* 點餐菜單設定 */
+
+.menulist {
+	font-size: 20px;
+	padding: 10px;
+}
+
+.fonet {
+	display: flex;
+	justify-content: center;
+}
+
+#menushow,#menushow1{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+ 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="first.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <script src="menu.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="show()">
+    <!-- 導覽頁 -->
+    <header class="office__header" id="office__header" >
+        <div class="office__header--img">
+            <a href="">
+                <img src="店圖.png" alt="">
+            </a>
+        </div>
+        <div id="time" class="office__header--time">
+        </div>
+    </header>
+    <!-- 門框線 -->
+    <nav>
+        <div class="office__nav--lineon">
+            <div class="office__nav--lineon1"></div>
+            <div class="office__nav--lineon2"></div>
+            <div class="office__nav--lineon3"></div>
+            <div class="office__nav--lineon4"></div>
+        </div>
+    </nav>
+    <!-- 窗邊座位 -->
+    <nav class="office__nav--widows">
+        <div class="office__nav--widows">
+            <button class="office__nav--button"></button>
+            <div class="office__nav--table">窗1</div>
+            <button class="office__nav--button"></button>
+        </div>
+        <div class="office__nav--widows">
+            <button class="office__nav--button"></button>
+            <div class="office__nav--table">窗2</div>
+            <button class="office__nav--button"></button>
+        </div>
+        <div class="office__nav--widows">
+            <button class="office__nav--button"></button>
+            <div class="office__nav--table">窗3</div>
+            <button class="office__nav--button"></button>
+        </div>
+    </nav>
+    <!-- 室內座位1與2 -->
+    <nav class="office__nav--intablein">
+        <div class="office__nav--in">
+            <div>
+                <button class="office__nav--button-in"></button>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                </div>
+            </div>
+            <div class="office__nav--tableon">
+                <div class="office__nav--tablein"></div>
+            </div>
+            <div>
+                <button class="office__nav--button-in"></button>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                </div>
+            </div>
+        </div>
+        <div class="office__nav--tableright">
+            <div class="office__nav--in">
+                <div>
+                    <button class="office__nav--button-in"></button>
+                    <div>
+                        <button class="office__nav--button-in"></button>
+                    </div>
+                </div>
+                <div class="office__nav--tableon">
+                    <div class="office__nav--tablein"></div>
+                </div>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                    <div>
+                        <button class="office__nav--button-in"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 室內座位3與4 -->
+    <nav class="office__nav--intablein">
+        <div class="office__nav--in">
+            <div>
+                <button class="office__nav--button-in"></button>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                </div>
+            </div>
+            <div class="office__nav--tableon">
+                <div class="office__nav--tablein"></div>
+            </div>
+            <div>
+                <button class="office__nav--button-in"></button>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                </div>
+            </div>
+        </div>
+        <div class="office__nav--tableright">
+            <div class="office__nav--in">
+                <div>
+                    <button class="office__nav--button-in"></button>
+                    <div>
+                        <button class="office__nav--button-in"></button>
+                    </div>
+                </div>
+                <div class="office__nav--tableon">
+                    <div class="office__nav--tablein"></div>
+                </div>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                    <div>
+                        <button class="office__nav--button-in"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 室內座位5與6 -->
+    <nav class="office__nav--intablein">
+        <div class="office__nav--in">
+            <div>
+                <button class="office__nav--button-in"></button>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                </div>
+            </div>
+            <div class="office__nav--tableon">
+                <div class="office__nav--tablein"></div>
+            </div>
+            <div>
+                <button class="office__nav--button-in"></button>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                </div>
+            </div>
+        </div>
+        <div class="office__nav--tableright">
+            <div class="office__nav--in">
+                <div>
+                    <button class="office__nav--button-in"></button>
+                    <div>
+                        <button class="office__nav--button-in"></button>
+                    </div>
+                </div>
+                <div class="office__nav--tableon">
+                    <div class="office__nav--tablein"></div>
+                </div>
+                <div>
+                    <button class="office__nav--button-in"></button>
+                    <div>
+                        <button class="office__nav--button-in"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 吧檯 -->
+    <nav class="office__nav--tablebarnav">
+        <div class="office__nav--tablebar">
+            <img src="吧檯.png" alt="">
+        </div>
+        <div class="office__nav--barbutton">
+            <button class="office__nav--button-tablebar"></button>
+            <div>
+                <button class="office__nav--button-tablebar"></button>
+            </div>
+            <div>
+                <button class="office__nav--button-tablebar"></button>
+                <div>
+                    <button class="office__nav--button-tablebar"></button>
+                </div>
+    </nav>
+    <!-- 點餐視窗下拉選單 -->
+    <div class="header__mobileMenu">
+        <div class="searchBar__cancel"></div>
+        <nav class="mobileMenu">
+            <div>
+                <select id="menu" name="menu" required></select>
+            </div>
+            <div>
+                <select id="shop" name="shop" required>
+                    <option value="">請選擇</option>
+                </select>
+            </div>
+            <div>
+                <select name="" id="math">
+                    <option value="0">請選擇數量</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <p class="menulist">餐點： </p>
+            <div class="fonet">
+                <div id="menushow"></div>
+                <div id="menushow1"></div>
+            </div>
+            <button onclick="inmenu()">確認餐點</button>
+        </nav>
+        
+    </div>
+</body>
+
+</html>

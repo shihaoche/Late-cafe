@@ -228,18 +228,19 @@ update = function (e) {
 /* 監聽餐點選單是否改變value */
 menuoption.addEventListener('change', update);
 
-test = function tt(e){
-    console.log(e.target.value);
+// test = function tt(e){
+    // console.log(e.target.value);
     // var me = `
     //         <div class="menuclear" style="margin-top:15px; margin-bottom:15px; ">${e.target.value}</div>`;
     // document.getElementById("menushow").innerHTML += me; 
     
-    }
-shopoption.addEventListener('change',test);
+    // }
+    /* 監聽餐點選單是否改變value */
+// shopoption.addEventListener('change',test);
 
 
 
-test2 = function open(e){
+menuall = function open(e){
     // console.log(e.target.value);
 
     var menu = `
@@ -256,8 +257,8 @@ test2 = function open(e){
 
     
 }
-
-mathoption.addEventListener('change',test2);
+/* 監聽數量選單是否改變value */
+mathoption.addEventListener('change',menuall);
 
 
 
@@ -273,4 +274,11 @@ $("#menushow1").on("click", ".menuclear", function (e) {
 function inmenu(){
     document.getElementById("menushow").innerHTML = "";
     document.getElementById("menushow1").innerHTML = "";
+    
+    $(".header__mobileMenu").removeClass("open");
+
+    $(".header__mobileMenu").removeClass("open");
+
+    $(".header__mobileMenu").removeClass("open");
+
 }

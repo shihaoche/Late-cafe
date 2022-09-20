@@ -85,7 +85,7 @@ table {
 
 @media screen and (max-width:640px){
 	#time{
-		font-size:x-small;
+		font-size:larger;
 	}
 	
 }

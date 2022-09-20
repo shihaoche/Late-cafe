@@ -82,9 +82,12 @@ table {
 	font-size: 30px;
 }
 
-.office__header--img img {
-	width: 280px;
-	height: 70px;
+
+@media screen and (max-width:640px){
+	#time{
+		font-size:x-small;
+	}
+	
 }
 
 /* 店門與窗框線 */
@@ -291,4 +294,3 @@ table {
 	margin-right: 10px;
 }
 
- 

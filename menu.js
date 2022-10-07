@@ -179,8 +179,6 @@ var shoplist = [
     },
 ]
 
-
-// 餐點
 var menuleng = menulist.length;
 
 var str = '<option value="">請選擇餐點</option>';
@@ -190,58 +188,39 @@ for (var i = 0; i < menuleng; i++) {
     // console.log(str);
 }
 
-/* str 塞入餐點下拉選單 */
 menuoption.innerHTML = str;
 
-// 餐
 var shopleng = shoplist.length;
 
 
 update = function (e) {
    console.log('選擇的餐點', e.target.value)
   
-   /* 餐的預設項目 */
    var str2 = '<option value="">請選擇餐</option>';
 
   
     for (i = 0; i < shopleng; i++) {
         if (e.target.value == shoplist[i].menu) {
-          /* 如有餐選項，餐選單開啟 */
             shopoption.disabled = false;
           
           console.log('被選擇的名稱',shoplist[i].shop);
-    
-          /* 選擇的餐點 = 餐點的餐 即加入str2 */
             str2 += '<option value="' + shoplist[i].value + '" >' + shoplist[i].shop + '</option>';
           
         } else if (e.target.value == '無') {
-            /* 如果選擇無，餐選單關閉 */
             shopoption.disabled = true;
         }
     }
   
-   /* str2 塞入餐點下拉選單 */
     shopoption.innerHTML = str2;
 
 }
 
-/* 監聽餐點選單是否改變value */
+
 menuoption.addEventListener('change', update);
-
-// test = function tt(e){
-    // console.log(e.target.value);
-    // var me = `
-    //         <div class="menuclear" style="margin-top:15px; margin-bottom:15px; ">${e.target.value}</div>`;
-    // document.getElementById("menushow").innerHTML += me; 
-    
-    // }
-    /* 監聽餐點選單是否改變value */
-// shopoption.addEventListener('change',test);
-
 
 
 menuall = function open(e){
-    // console.log(e.target.value);
+  
 
     var menu = `
                 <div style="margin-top:15px; margin-bottom:15px; ">${shopoption.value}  * ${math.value} <a href="" class="menuclear" >X</a> </div> `;
@@ -249,15 +228,14 @@ menuall = function open(e){
                    
     document.getElementById("menushow1").innerHTML += menu;
 
-    // 清空下拉選項
+   
     $("#menu").val("");
     $("#math").prop('selectedIndex', 0);
-    // 清空第二下拉選單
     shopoption.innerHTML = '<option value="">請選擇餐</option>';
 
     
 }
-/* 監聽數量選單是否改變value */
+
 mathoption.addEventListener('change',menuall);
 
 
@@ -270,7 +248,7 @@ $("#menushow1").on("click", ".menuclear", function (e) {
     
 });
 
-// 清空餐點區(目前未與後端連結故先刪除)
+
 function inmenu(){
     document.getElementById("menushow").innerHTML = "";
     document.getElementById("menushow1").innerHTML = "";
